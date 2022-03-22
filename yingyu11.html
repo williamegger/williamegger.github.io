@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>英语</title>
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .catalogWrap {
+            position: fixed;
+            width: calc(100% - 20px);
+            height: calc(100% - 95px);
+            top: 5px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            overflow-y: scroll;
+        }
+        .catalogWrap li {
+            list-style: none;
+        }
+
+        .catalogWrap li h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2e7d32;
+            height: 45px;
+            line-height: 45px;
+            margin: 0;
+            padding: 0;
+        }
+        .catalogWrap li a {
+            font-size: 16px;
+            color: #00c853;
+            height: 35px;
+            line-height: 35px;
+            cursor: pointer;
+        }
+        .catalogWrap li a.currAudio {
+            color: #ff6d00;
+        }
+
+        .audioWrap {
+            position: fixed;
+            width: calc(100% - 20px);
+            bottom: 5px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        .audioTitle {
+            text-align: center;
+            height: 26px;
+            line-height: 26px;
+            overflow: hidden;
+        }
+        #myAudio {
+            width: 100%;
+            height: 54px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="catalogWrap">
+    <h1>英语 一年级下</h1>
+    <ul>
+        <li><h3>Unit1</h3></li>
+        <li><a class="audioItem" data-filename="u1%20chant.MP3">01. Unit1 chant.MP3</a></li>
+        <li><a class="audioItem" data-filename="u1%20listen%20draw.MP3">02. Unit1 listen draw.MP3</a></li>
+        <li><a class="audioItem" data-filename="u1%20listen%20match.MP3">03. Unit1 listen match.MP3</a></li>
+        <li><a class="audioItem" data-filename="u1%20listen%20number.MP3">04. Unit1 listen number.MP3</a></li>
+        <li><a class="audioItem" data-filename="u1%20listen.MP3">05. Unit1 listen.MP3</a></li>
+        <li><a class="audioItem" data-filename="u1%20sing.MP3">06. Unit1 sing.MP3</a></li>
+        <li><a class="audioItem" data-filename="u1%20word.MP3">07. Unit1 word.MP3</a></li>
+        <li><h3>Unit2</h3></li>
+        <li><a class="audioItem" data-filename="u2%20chant.MP3">08. Unit2 chant.MP3</a></li>
+        <li><a class="audioItem" data-filename="u2%20circle.MP3">09. Unit2 circle.MP3</a></li>
+        <li><a class="audioItem" data-filename="u2%20draw.MP3">10. Unit2 draw.MP3</a></li>
+        <li><a class="audioItem" data-filename="u2%20listen%202.MP3">11. Unit2 listen 2.MP3</a></li>
+        <li><a class="audioItem" data-filename="u2%20listen%203.MP3">12. Unit2 listen 3.MP3</a></li>
+        <li><a class="audioItem" data-filename="u2%20listen.MP3">13. Unit2 listen.MP3</a></li>
+        <li><a class="audioItem" data-filename="u2%20number.MP3">14. Unit2 number.MP3</a></li>
+        <li><a class="audioItem" data-filename="u2%20song.MP3">15. Unit2 song.MP3</a></li>
+        <li><a class="audioItem" data-filename="u2%20word.MP3">16. Unit2 word.MP3</a></li>
+        <li><h3>Unit3</h3></li>
+        <li><a class="audioItem" data-filename="u3%20chant.MP3">17. Unit3 chant.MP3</a></li>
+        <li><a class="audioItem" data-filename="u3%20listen.MP3">18. Unit3 listen.MP3</a></li>
+        <li><a class="audioItem" data-filename="u3%20number.MP3">19. Unit3 number.MP3</a></li>
+        <li><a class="audioItem" data-filename="u3%20sing.MP3">20. Unit3 sing.MP3</a></li>
+        <li><a class="audioItem" data-filename="u3%20tick.MP3">21. Unit3 tick.MP3</a></li>
+        <li><a class="audioItem" data-filename="u3%20word.MP3">22. Unit3 word.MP3</a></li>
+        <li><a class="audioItem" data-filename="u3.MP3">23. Unit3.MP3</a></li>
+        <li><h3>Unit4</h3></li>
+        <li><a class="audioItem" data-filename="u4%20chant.MP3">24. Unit4 chant.MP3</a></li>
+        <li><a class="audioItem" data-filename="u4%20colour.MP3">25. Unit4 colour.MP3</a></li>
+        <li><a class="audioItem" data-filename="u4%20guess.MP3">26. Unit4 guess.MP3</a></li>
+        <li><a class="audioItem" data-filename="u4%20point.MP3">27. Unit4 point.MP3</a></li>
+        <li><a class="audioItem" data-filename="u4%20sing.MP3">28. Unit4 sing.MP3</a></li>
+        <li><a class="audioItem" data-filename="u4%20trace.MP3">29. Unit4 trace.MP3</a></li>
+        <li><a class="audioItem" data-filename="u4%20word.MP3">30. Unit4 word.MP3</a></li>
+        <li><h3>Unit5</h3></li>
+        <li><a class="audioItem" data-filename="u5%20chant.MP3">31. Unit5 chant.MP3</a></li>
+        <li><a class="audioItem" data-filename="u5%20listen.MP3">32. Unit5 listen.MP3</a></li>
+        <li><a class="audioItem" data-filename="u5%20match.MP3">33. Unit5 match.MP3</a></li>
+        <li><a class="audioItem" data-filename="u5%20number.MP3">34. Unit5 number.MP3</a></li>
+        <li><a class="audioItem" data-filename="u5%20sing.MP3">35. Unit5 sing.MP3</a></li>
+        <li><a class="audioItem" data-filename="u5%20tick.MP3">36. Unit5 tick.MP3</a></li>
+        <li><a class="audioItem" data-filename="u5%20word.MP3">37. Unit5 word.MP3</a></li>
+        <li><h3>Unit6</h3></li>
+        <li><a class="audioItem" data-filename="u6%201.MP3">38. Unit6 1.MP3</a></li>
+        <li><a class="audioItem" data-filename="u6%202.MP3">39. Unit6 2.MP3</a></li>
+        <li><a class="audioItem" data-filename="u6%20act.MP3">40. Unit6 act.MP3</a></li>
+        <li><a class="audioItem" data-filename="u6%20new%20chant.MP3">41. Unit6 new chant.MP3</a></li>
+        <li><a class="audioItem" data-filename="u6%20say.MP3">42. Unit6 say.MP3</a></li>
+        <li><a class="audioItem" data-filename="u6%20sing.MP3">43. Unit6 sing.MP3</a></li>
+    </ul>
+</div>
+<div class="audioWrap">
+    <div class="audioTitle"></div>
+    <audio id="myAudio" src="" controls="controls"></audio>
+</div>
+
+<script src="./res/lib/jquery-2.2.4.min.js"></script>
+<script>
+    $(function() {
+        init();
+    });
+
+    var init = function() {
+        $('.audioItem').click(function() {
+            var obj = $(this);
+
+            $('.audioTitle').text(obj.text());
+            var audio = $('#myAudio');
+            audio.attr('src', './res/yingyu11/' + obj.attr('data-filename'));
+            audio[0].load();
+
+            $('.audioItem').removeClass('currAudio');
+            obj.addClass('currAudio');
+        });
+    };
+</script>
+</body>
+</html>
